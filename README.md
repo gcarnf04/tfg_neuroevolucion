@@ -40,7 +40,6 @@ Implements the deslizante Walk-Forward evaluation framework and the vectorised *
 ├── aux/                # Data management, dynamic slippage, and feature engineering
 ├── eda/                # Exploratory Data Analysis, PCA, and regime characterization
 ├── modelo/             # Neural architectures, L1 consensus, and fitness logic
-├── tests/              # Integrity and anti-leakage test suite
 └── config_example.json # Baseline configuration parameters template
 ```
 
@@ -57,12 +56,6 @@ Implements the deslizante Walk-Forward evaluation framework and the vectorised *
    Clone the template configuration file to customize parameters:
    ```bash
    cp config_example.json config.json
-   ```
-
-3. **Verify structure**:
-   Run the integrity and feature extraction tests to verify environment compatibility:
-   ```bash
-   pytest tests/
    ```
 
 ---
