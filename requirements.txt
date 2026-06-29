@@ -1,0 +1,23 @@
+# Core & Data Analysis
+numpy>=1.24.0
+pandas>=2.0.0
+yfinance>=0.2.18
+scikit-learn>=1.2.0
+scipy>=1.10.0
+
+# Deep Learning (Optimizado para Apple Silicon/MPS)
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Optimización & Algoritmos Genéticos
+optuna>=3.1.0
+tqdm>=4.65.0
+
+# Visualización & Reportes
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Utilidades de Sistema
+python-dotenv>=1.0.0
+requests>=2.28.0
+sqlalchemy>=2.0.0

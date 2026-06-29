@@ -1,0 +1,83 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.flakes/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# --- Virtual Environments ---
+venv/
+.env/
+ENV/
+env.bak/
+venv.bak/
+
+# --- IDEs / Editors ---
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# --- Project Specific (Data & Cache) ---
+.cache/
+.cache_modelos/
+.cache_dataset/
+*.db
+*.db-journal
+tmp/
+scratch/
+.pytest_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+
+# --- Alpha Hunter Outputs ---
+# Ignorar ejecuciones pesadas (logs, imágenes, CSVs de resultados)
+ejecuciones/
+!ejecuciones/.gitkeep
+
+# Ignorar modelos entrenados (binarios pesados)
+modelos/
+modelos/*.pth
+modelos/*.pkl
+modelos/*.json
+!modelos/diagnostico_walkforward.json
+!modelos/equity_curves.json
+
+# --- Logs ---
+*.log
+logs/
+
+# --- Others ---
+plots/
+*.ini
+*.npy
+*.png
+*.pdf
+*.jpeg
+documentacion/
+
+# --- IP Protection (Excluding production weights and configs) ---
+config.json
+modelos_produccion/
+produccion.py
+motor_ga.py
+optuna_trading.db
+tests/

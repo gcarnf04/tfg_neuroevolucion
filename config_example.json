@@ -1,0 +1,141 @@
+{
+  "UNIVERSO": {
+    "tickers": [
+      "SPY",
+      "QQQ",
+      "GLD",
+      "EEM",
+      "XLE",
+      "IWM"
+    ],
+    "fecha_inicio": "2018-01-01",
+    "ticker_cash": "BIL",
+    "ticker_macro": "^TNX"
+  },
+  "GA": {
+    "poblacion": 100,
+    "generaciones": 10,
+    "tasa_mutacion": 0.15,
+    "fuerza_mutacion": 0.10,
+    "ratio_elitismo": 0.05,
+    "ratio_inmigrantes": 0.20,
+    "paciencia": 5,
+    "min_delta": 0.01
+  },
+  "MINADO": {
+    "n_fundadores": 10,
+    "poblacion_mining": 50,
+    "generaciones_mining": 5,
+    "timeout_minado": 30,
+    "n_warm_seed": 10,
+    "k_folds": 3,
+    "cv_umbral": 0.5
+  },
+  "EJECUCION": {
+    "eval_chunk_size": 1000,
+    "cpus": 4,
+    "metrica": "metrica_absoluta",
+    "base_spread": 0.0005,
+    "k_slippage": 0.5,
+    "n_sondeo_calibracion": 500,
+    "percentil_objetivo": 80,
+    "step_size": 64,
+    "target_return_anual": 0.08,
+    "n_ventanas": 2,
+    "modelo_produccion": false,
+    "oos_general": 252
+  },
+  "OPTIMIZABLES": {
+    "w_ret": 0.15,
+    "w_mdd": 0.15,
+    "w_sharpe_dif": 0.15,
+    "w_sortino": 0.15,
+    "w_linealidad": 0.15,
+    "w_l2": 0.10,
+    "w_turnover": 0.15,
+    "ocultas": [
+      32
+    ],
+    "train_size": 252,
+    "umbral_rebalanceo": 0.05,
+    "n_comite": 1,
+    "feature_dropout_rate": 0.20,
+    "w_cobardia": 0.0,
+    "w_dominancia": 0.0,
+    "w_decorrel": 0.0,
+    "k_comite_meta": 3
+  },
+  "PARAMETROS_ESTATICOS": {
+    "comisiones": [
+      0.0001,
+      0.0001,
+      0.0001,
+      0.0001,
+      0.0001,
+      0.0001,
+      0.0
+    ]
+  },
+  "FASE_1": {
+    "N_TRIALS": 10,
+    "N_FINAL_MODELS": 1000,
+    "N_VENTANAS": 5,
+    "w_ret": 0.15,
+    "w_mdd": 0.15,
+    "w_sharpe_dif": 0.15,
+    "w_sortino": 0.15,
+    "w_linealidad": 0.15,
+    "w_l2": 0.10,
+    "w_turnover": 0.15,
+    "_ultima_actualizacion": "2026-06-29 00:00:00",
+    "w_cobardia": 0.0,
+    "w_dominancia": 0.0,
+    "w_decorrel": 0.0
+  },
+  "FASE_2": {
+    "N_TRIALS": 5,
+    "n_ventanas": 5,
+    "poblacion": 50,
+    "generaciones": 10,
+    "paciencia": 3,
+    "n_fundadores": 3,
+    "poblacion_mining": 20,
+    "generaciones_mining": 3,
+    "timeout_minado": 10,
+    "n_sondeo_calibracion": 100,
+    "k_folds": 2,
+    "cv_umbral": 0.0,
+    "train_size": 252,
+    "umbral_rebalanceo": 0.05,
+    "ocultas": [
+      32
+    ],
+    "_ultima_actualizacion": "2026-06-29 00:00:00",
+    "feature_dropout_rate": 0.20
+  },
+  "FASE_3": {
+    "TECHO_EXPLORACION": 3,
+    "N_BOOTSTRAPS": 50,
+    "TAMANOS_COMITE": [
+      1,
+      3
+    ],
+    "pool_fijo_fundadores": 3,
+    "poblacion": 50,
+    "generaciones": 10,
+    "paciencia": 2,
+    "n_comite": 1,
+    "timeout_minado": 10,
+    "n_fundadores": 3,
+    "poblacion_mining": 20,
+    "generaciones_mining": 3,
+    "_ultima_actualizacion": "2026-06-29 00:00:00",
+    "track_gen_evolution": true
+  },
+  "FASE_4": {
+    "K_MAX_RUNS": 3,
+    "p_val_max": 0.1,
+    "k_comite_meta": 3,
+    "_ultima_actualizacion": "2026-06-29 00:00:00"
+  }
+}
